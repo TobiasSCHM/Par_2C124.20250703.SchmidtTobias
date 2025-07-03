@@ -24,7 +24,7 @@ public class CompraView extends VBox {
         
         Label lblTitulo = new Label("Compra de entradas");
         
-        // Mostrar salas disponibles
+        
         Label lblSalas = new Label("Salas disponibles:");
         for (Sala sala : salas) {
             lblSalas.setText(lblSalas.getText() + "\n" + sala.toString());
@@ -69,17 +69,17 @@ public class CompraView extends VBox {
                     return;
                 }
                 
-                // Crear función (simplificado)
+                
                 Funcion funcion = new Funcion(salaSeleccionada, LocalDateTime.now());
                 
-                // Crear entrada
+                
                 Entrada entrada = new Entrada(funcion, numAsiento, cuenta);
                 entradas.add(entrada);
                 salaSeleccionada.ocuparAsiento(numAsiento);
                 
                 lblTitulo.setText("Entrada comprada con éxito!\n" + entrada);
                 
-                // Limpiar campos
+                
                 tfSala.clear();
                 tfAsiento.clear();
                 

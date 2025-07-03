@@ -12,7 +12,7 @@ public class Funcion implements Serializable {
         this.horario = horario;
     }
     
-    // Getters
+    
     public Sala getSala() { return sala; }
     public LocalDateTime getHorario() { return horario; }
     

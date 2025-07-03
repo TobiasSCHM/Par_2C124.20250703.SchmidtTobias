@@ -21,7 +21,7 @@ public class Butaca implements Serializable {
         this.ocupada = false;
     }
     
-    // Getters y setters
+   
     public int getNumero() { return numero; }
     public int getFila() { return fila; }
     public boolean isOcupada() { return ocupada; }

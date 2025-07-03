@@ -47,7 +47,7 @@ public class RegisterView extends VBox {
             cuentas.put(nombre, new Cuenta(pin, email));
             lbl.setText("Usuario registrado con éxito!");
             
-            // Limpiar campos
+            
             campoNombre.clear();
             campoPin.clear();
             campoEmail.clear();

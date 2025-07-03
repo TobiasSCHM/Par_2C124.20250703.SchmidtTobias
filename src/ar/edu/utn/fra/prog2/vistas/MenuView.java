@@ -17,10 +17,10 @@ public class MenuView extends VBox {
                    List<Sala> salas,
                    List<Entrada> entradas) {
         
-        // Configuración básica
+        
         setSpacing(10);
         
-        // Componentes simples
+        
         Label lblBienvenida = new Label("Bienvenido, " + cuenta.getNombre());
         
         Button btnVerPeliculas = new Button("Ver películas disponibles");
@@ -28,11 +28,11 @@ public class MenuView extends VBox {
         Button btnMisEntradas = new Button("Mis entradas");
         Button btnCerrarSesion = new Button("Cerrar sesión");
         
-        // Label para mostrar información
+        
         Label lblInfo = new Label();
         lblInfo.setWrapText(true); // Para que el texto se ajuste
         
-        // Acciones de los botones
+        
         btnVerPeliculas.setOnAction(e -> {
             String info = "Películas disponibles:\n";
             for (Sala sala : salas) {
@@ -66,14 +66,7 @@ public class MenuView extends VBox {
             stage.setScene(new Scene(login));
         });
         
-        // Agregar componentes al layout
-        getChildren().addAll(
-            lblBienvenida, 
-            btnVerPeliculas, 
-            btnComprarEntrada, 
-            btnMisEntradas, 
-            lblInfo,
-            btnCerrarSesion
-        );
+        
+        getChildren().addAll(lblBienvenida, btnVerPeliculas, btnComprarEntrada, btnMisEntradas, lblInfo, btnCerrarSesion);
     }
 }

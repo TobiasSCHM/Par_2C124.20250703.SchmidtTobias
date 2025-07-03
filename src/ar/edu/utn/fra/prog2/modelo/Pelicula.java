@@ -13,7 +13,7 @@ public class Pelicula implements Serializable {
         this.duracion = duracion;
     }
     
-    // Getters
+  
     public String getTitulo() {
         return titulo; }
     

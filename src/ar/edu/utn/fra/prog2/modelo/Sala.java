@@ -16,11 +16,11 @@ public class Sala implements Serializable {
         this.capacidad = capacidad;
         this.asientos = new ArrayList<>(capacidad);
         for (int i = 0; i < capacidad; i++) {
-            asientos.add(false); // Todos los asientos libres al inicio
+            asientos.add(false);
         }
     }
     
-    // Getters
+    
     public int getNumero() { return numero; }
     public Pelicula getPelicula() { return pelicula; }
     public int getCapacidad() { return capacidad; }

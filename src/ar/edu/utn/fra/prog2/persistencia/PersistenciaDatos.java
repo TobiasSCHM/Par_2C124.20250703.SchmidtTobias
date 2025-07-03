@@ -73,7 +73,6 @@ public class PersistenciaDatos {
         File archivo = new File(ARCHIVO_SALAS);
         if (!archivo.exists()) {
             List<Sala> salas = new ArrayList<>();
-            // Crear algunas salas de ejemplo
             Pelicula p1 = new Pelicula("Avengers: Endgame", "Acción", 180);
             Pelicula p2 = new Pelicula("The Batman", "Acción", 176);
             salas.add(new Sala(1, p1, 50));

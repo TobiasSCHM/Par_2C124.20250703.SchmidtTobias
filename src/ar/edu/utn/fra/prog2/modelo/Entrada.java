@@ -16,7 +16,7 @@ public class Entrada implements Serializable {
         this.fechaCompra = LocalDateTime.now();
     }
     
-    // Getters
+
     public Funcion getFuncion() { return funcion; }
     public int getAsiento() { return asiento; }
     public LocalDateTime getFechaCompra() { return fechaCompra; }

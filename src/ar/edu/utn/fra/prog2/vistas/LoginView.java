@@ -12,7 +12,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import ar.edu.utn.fra.prog2.controladores.ControladorLogin;
 
 public class LoginView extends VBox {
     
